@@ -20,6 +20,10 @@ gem 'nested_form'
 gem 'httparty'
 gem 'ckeditor'
 
+#angular Gems
+gem 'bower-rails'
+gem 'angularjs-rails'
+
 #mongo Gems
 gem 'mongoid'
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
