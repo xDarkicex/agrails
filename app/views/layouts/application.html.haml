@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Agrails
+    = javascript_include_tag "https://www.google.com/jsapi"
+    = assets_if_exists 'application'
+    = assets_if_exists params[:controller].sub(/^.+?\//,'') unless(params[:controller] == 'application')
+    = csrf_meta_tags
+  %body
+    = yield

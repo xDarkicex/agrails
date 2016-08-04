@@ -2,9 +2,11 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require angular
-//= require angular-animate
-//= require angular-resource
+//= require leaflet
+
+// Setup data row clickable
 $(function(){
   $('body').click(function(e){
     var obj = $(e.target.parentNode);

@@ -17,12 +17,14 @@ gem "haml-rails", "~> 0.9"
 gem 'meta-tags'
 gem 'autoprefixer-rails'
 gem 'nested_form'
-gem 'httparty'
 gem 'ckeditor'
 
 #angular Gems
-gem 'bower-rails'
-gem 'angularjs-rails'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
 
 #mongo Gems
 gem 'mongoid'
